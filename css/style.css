@@ -34,10 +34,15 @@ input {
 input[type="submit"] {
 	color: white;
 	background-color: #ef5350;
-	font-weight: bold;
+	font-weight: 500;
 	font-family: 'Roboto Slab', serif;
     display: block;
     margin: 0 auto;
+}
+input[type="submit"]:hover {
+	background-color: #BA000D;
+	transition: 0.3s;
+	box-shadow: 0 0 5px red;
 }
 section {
 	align-content: center;
@@ -155,6 +160,14 @@ section {
 	padding: 30px;
 	min-height: 210px;
 	text-align: center;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+#boxes:hover {
+	filter: none;
+	-webkit-filter: grayscale(0);
+	transition: 0.5s;
+	box-shadow: 0 0px 8px #BA000D;
 }
 #boxhr {
 	margin: auto;
@@ -162,4 +175,3 @@ section {
 	margin-bottom: 10px;
 	max-width: 50%;
 }
-#sombreado {}
