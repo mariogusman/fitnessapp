@@ -30,8 +30,7 @@
         </div>
     </header>
 
-<section class="topBanner">    <!-- Top banner with motivational msg & CTA -->
-    <div class="logoFloating">
+<section class="topBanner">    <!-- Top banner with motivational msg & CTA -->    <div class="logoFloating">
         <h1 id=h1Banner>Get Shredded Without
         <br>Even Trying
         </h1>
@@ -50,13 +49,14 @@
     <button type="signupBanner" id="botBanner">Try for FREE</button>
     </div>
 </section>
-
 <section class="featSection">    <!-- Features Cards -->
-    <h1 id="h1feat">Why you'll love us ♥</h1>
-    <p>These are the main reasons why people won't stop signing up
-    <br> besides this being
-    <strong>the best app available on the marked:
-    </p>
+    <div class="">
+        <h1 id="h1feat">Why you'll love us ♥</h1>
+        <p id="pfeature">These are the main reasons why people won't stop signing up besides this being <strong>the best app available on the marked:
+        </p>
+    </div>
+
+
     <div class="features">    <!-- cards with main features, used flex wrap to adjust -->
         <div class="card">
             <div class="cardBG" id="card1"></div>
@@ -84,120 +84,42 @@
         </div>
     </div>
 </section>
-
-
-<section class="testimonials">    <!-- testimonial carousel -->
-    <h1 id="h1test">What our members are saying:</h1>
-    <!-- Flickity HTML init -->
-    <div class="carousel" data-flickity='{ "wrapAround": true }'>
-        <div class="carousel-cell">
-            <div class="carUser">
-                <div class="carPhoto">
-                </div>
-                <div class="carName">
-                    <h3 id=testUser>Karen O.</h3>
-                    <h4>30 yo, Dublin</h4>
-                </div>
-            </div>
-            <div class="carCont">
-                <div class="carTitle">
-                    <h2 id="testitle">I found myself again...</h2>
-                </div>
-                <div class="carText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
-                </div>
-            </div>
-
-
-
-        </div>
-        <div class="carousel-cell">
-            <div class="carUser">
-                <div class="carPhoto">
-                </div>
-                <div class="carName">
-                    <h3 id=testUser>Karen O.</h3>
-                    <h4>30 yo, Dublin</h4>
-                </div>
-            </div>
-            <div class="carCont">
-                <div class="carTitle">
-                    <h2 id="testitle">I found myself again...</h2>
-                </div>
-                <div class="carText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
-                </div>
-            </div>
-
-
-
-        </div>
-        <div class="carousel-cell">
-            <div class="carUser">
-                <div class="carPhoto">
-                </div>
-                <div class="carName">
-                    <h3 id=testUser>Karen O.</h3>
-                    <h4>30 yo, Dublin</h4>
-                </div>
-            </div>
-            <div class="carCont">
-                <div class="carTitle">
-                    <h2 id="testitle">I found myself again...</h2>
-                </div>
-                <div class="carText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
-                </div>
-            </div>
-
-
-
-        </div>
-        <div class="carousel-cell">
-            <div class="carUser">
-                <div class="carPhoto">
-                </div>
-                <div class="carName">
-                    <h3 id=testUser>Karen O.</h3>
-                    <h4>30 yo, Dublin</h4>
-                </div>
-            </div>
-            <div class="carCont">
-                <div class="carTitle">
-                    <h2 id="testitle">I found myself again...</h2>
-                </div>
-                <div class="carText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
-                </div>
-            </div>
-
-
-
-        </div>
-        <div class="carousel-cell">
-            <div class="carUser">
-                <div class="carPhoto">
-                </div>
-                <div class="carName">
-                    <h3 id=testUser>Karen O.</h3>
-                    <h4>30 yo, Dublin</h4>
-                </div>
-            </div>
-            <div class="carCont">
-                <div class="carTitle">
-                    <h2 id="testitle">I found myself again...</h2>
-                </div>
-                <div class="carText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
-                </div>
-            </div>
-
-
-
+<div class="testbg">
+    <section class="testimonials">    <!-- testimonial carousel -->
+        <div class="testxt">
+            <h1 id="h1test">Trusted and Loved by thousands of users</h1>
+            <p id="ptestimonial">We're honored to be a part of our users' success stories - You too can be succesfull in losing weight and being healthier.</p>
         </div>
 
-    </div>
-</section>
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{"autoPlay": 1500, "initialIndex":1, "wrapAround": true }'>
+
+            <div class="carousel-cell">
+                <div class="carPhoto"></div>
+                <p class="carCont">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus mi, quis maximus purus elementum a. Suspendisse imperdiet dignissim nibh, et vestibulum arcu sodales at. Sed fringilla lacus id."</p>
+                <p id="testUser">Karen Benqs</p>
+                <p id="testpuser">After 3 months of FitnessApp use.</p>
+            </div>
+            <div class="carousel-cell">
+                <div class="carPhoto"></div>
+                <p class="carCont">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus mi, quis maximus purus elementum a. Suspendisse imperdiet dignissim nibh, et vestibulum arcu sodales at. Sed fringilla lacus id."</p>
+                <p id="testUser">Jessica Lopez</p>
+                <p id="testpuser">After 3 months of FitnessApp use.</p>
+            </div>
+            <div class="carousel-cell">
+                <div class="carPhoto"></div>
+                <p class="carCont">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus mi, quis maximus purus elementum a. Suspendisse imperdiet dignissim nibh, et vestibulum arcu sodales at. Sed fringilla lacus id."</p>
+                <p id="testUser">Minerva McGonnagal</p>
+                <p id="testpuser">After 3 months of FitnessApp use.</p>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+
+
+
 <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
 </html>

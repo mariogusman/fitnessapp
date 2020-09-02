@@ -154,6 +154,12 @@ button[type="signupBanner"]:hover {
   transition: 0.3s;
 }
 
+.testbg {
+    width: 100%;
+    background-color: #EEE8EE;
+    padding-bottom: 50px;
+}
+
 .cadContent {
   padding: 15px;
   margin-top: -20px;
@@ -177,19 +183,17 @@ button[type="signupBanner"]:hover {
 }
 
 .carousel-cell {
-  background-color: white;
-  max-height: 250px;
-  width: 50%;
-  min-width: 40%;
-  border-radius: 5px;
-  margin: 10px;
-  counter-increment: carousel-cell;
-  background-color: rgba(255, 255, 255, 0.7);
-  flex: 0 1 300px;
+  height: 250px;
+  width: 40%;
+    max-width: 450px;
+  border-radius: 10px;
+  margin: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* Shadows around card */
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
@@ -206,16 +210,15 @@ button[type="signupBanner"]:hover {
     max-height: 250px;
 }
 .carPhoto {
-    height: 130px;
-    width: 130px;
-    margin: 20px;
-    margin-left: 20px;
-    margin-bottom: -10px;
-    background-image: url("https://ringwooddental.com.au/wp-content/uploads/2018/05/profile-placeholder-f-e1526434202694.jpg");
+    min-width: 80px;
+    min-height: 80px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    background-image: url("https://images.pexels.com/photos/2167673/pexels-photo-2167673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
-    border-radius: 70px;
+    border-radius: 100px;
     background-repeat: no-repeat;
-    background-position: 0% 40%;
+    background-position: 0% 0%;
 }
 .carName {
     margin: 0px;
@@ -225,10 +228,14 @@ button[type="signupBanner"]:hover {
 .carCont {
     font-style: italic;
     text-align: justify;
+    text-align-last: center;
     font-weight: normal;
-    padding: 20px;
-    padding-right: 50px;
-}
+    font-size: 13px;
+    margin-bottom: -15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    }
 
 .testimonials {
     margin-top: 100px;
@@ -236,6 +243,12 @@ button[type="signupBanner"]:hover {
   width: 80%;
   margin-left: 10%;
   margin-bottom: 150px;
+    }
+
+.carousel {
+    max-width: 80%;
+    margin-left: 10%;
+
 }
 
 #h1Banner {
@@ -295,8 +308,8 @@ button[type="signupBanner"]:hover {
 }
 
 #testUser {
-    font-size: 22px;
-    margin-bottom: -20px;
+    font-size: 12px;
+    margin-bottom: -15px;
 }
 
 #testitle {
@@ -309,5 +322,25 @@ button[type="signupBanner"]:hover {
     text-align: center;
     font-size: 44px;
     font-weight: normal;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+}
+
+#testpuser {
+    font-size: 10px;
+    font-weight: normal;
+    color: #E2798C;
+}
+
+#pfeature {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+#ptestimonial {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -30px;
+
 }
