@@ -1,196 +1,313 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@700&display=swap');
-html, body {
-    height: 100%;
-}
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #FFFAFB;
-    font-size: 16px;
-}
-h1 {
-    font-family: 'Teko', sans-serif;
-    color: #242325;
-}
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #242325;
-}
-a:hover {
-    color: #BE649A;
-    font-weight: bolder;
-    transition: 0.3s;
-}
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 80px;
-}
-button {
-    padding: 8px;
-    margin: 8px;
-    border: none;
-    border-radius: 7px;
-    font-weight: bold;
-    color: dimgray;
-}
-button:hover {
-    background-color: #dddddd;
-    transition: 0.3s;
-    color: black;
-    font-weight: bold;
-}
-button[type="signup"]:hover{
-    background-color: #BE649A;
-    padding-left: 20px;
-    padding-right: 20px;
-    transition: 0.3s;
-    color: #FFFAFB;
-    padding: 10px;
-}
-button[type="signupBanner"]{
-    background-color: #BE649A;
-    transition: 0.2s;
-    color: #FFFAFB;
-    padding: 10px;
-}
-button[type="signupBanner"]:hover{
-    background-color: #BD6198;
-    padding-left: 40px;
-    padding-right: 40px;
-    transition: 0.2s;
-    color: #FFFAFB;
-    /* box-shadow: 0 0 5px 1px; */
 
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFFAFB;
+  font-size: 16px;
+  width: 100%
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+  color: #242325;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #242325;
+}
+
+a:hover {
+  color: #BE649A;
+  transition: 0.3s;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 80px;
+}
+
+button {
+  padding: 8px;
+  margin: 8px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  color: dimgray;
+}
+
+button:hover {
+  background-color: #dddddd;
+  transition: 0.3s;
+  color: black;
+  font-weight: bold;
+}
+
+button[type="signup"]:hover {
+  background-color: #BE649A;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.3s;
+  color: #FFFAFB;
+  padding: 10px;
+}
+
+button[type="signupBanner"] {
+  background-color: #BE649A;
+  transition: 0.2s;
+  color: #FFFAFB;
+  padding: 10px;
+}
+
+button[type="signupBanner"]:hover {
+  background-color: #BD6198;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: 0.2s;
+  color: #FFFAFB;
+    /* box-shadow: 0 0 5px 1px; */;
 }
 
 .headerLeft {
-    margin-left: 20px;
-    min-width: 30%;
-    max-width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border: solid 1px black; */
-    }
+  margin-left: 20px;
+  min-width: 30%;
+  max-width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    /* border: solid 1px black; */;
+}
+
 .headerRight {
-    margin-right: 20px;
-   /* border: solid 1px black; */
-
+  margin-right: 20px;
+   /* border: solid 1px black; */;
 }
+
 .topBanner {
-    padding: 100px;
-    background-position: 50% 75%;
-    background-size: cover;
-    min-height: 40%;
-    margin-left: 60px;
-    margin-right: 60px;
-    padding-left: 90px;
-    justify-content: center;
-    background-image: url("https://images.pexels.com/photos/3758049/pexels-photo-3758049.jpeg?cs=srgb&dl=pexels-alexy-almond-3758049.jpg&fm=jpg");
+  padding: 100px;
+  background-position: 50% 75%;
+  background-size: cover;
+  min-height: 40%;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-left: 90px;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/3758049/pexels-photo-3758049.jpeg?cs=srgb&dl=pexels-alexy-almond-3758049.jpg&fm=jpg");
 }
-.logoFloating {
-    margin-left: 10%;
-}
-.bannerList {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    line-height: 180%;}
-.featSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-}
-.features {
-    display: flex;
-    justify-content: center;
-}
-.card {
-    width: 300px;
-    min-height: 350px;
-    border-radius: 20px;
-    margin: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
-    filter: opacity(30%) grayscale(100%);
-    transition: 1s;
-}
-.card:hover {
-    filter: opacity(100%) grayscale(0%);
-    transition: 0.3s;
-}
-.cadContent {
-    padding: 15px;
-    margin-top: -20px;
-    font-size: 16px;
-    font-weight: normal;
-    text-align: left;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 125%;
 
+.logoFloating {
+  margin-left: 10%;
 }
+
+.bannerList {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 180%;
+}
+
+.featSection {
+    margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+ }
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  min-height: 350px;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  flex: 0 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+  filter: opacity(30%) grayscale(100%);
+  transition: 1s;
+}
+
+.card:hover {
+  filter: opacity(100%) grayscale(0%);
+  transition: 0.3s;
+}
+
+.cadContent {
+  padding: 15px;
+  margin-top: -20px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 125%;
+}
+
 .cardBG {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.aCard {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.carousel-cell {
+  background-color: white;
+  max-height: 250px;
+  width: 50%;
+  min-width: 40%;
+  border-radius: 5px;
+  margin: 10px;
+  counter-increment: carousel-cell;
+  background-color: rgba(255, 255, 255, 0.7);
+  flex: 0 1 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+}
+.carUser {
+    width: 25%;
+    /* min-height: 250px */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #CF8CB4;
+    /* border: solid 1px black; */
+    max-height: 250px;
+}
+.carPhoto {
+    height: 130px;
+    width: 130px;
+    margin: 20px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    background-image: url("https://ringwooddental.com.au/wp-content/uploads/2018/05/profile-placeholder-f-e1526434202694.jpg");
+    background-size: cover;
+    border-radius: 70px;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+}
+.carName {
+    margin: 0px;
+    text-align: center;
+    color: black;
+}
+.carCont {
+    font-style: italic;
+    text-align: justify;
+    font-weight: normal;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+.testimonials {
+    margin-top: 100px;
+    padding-top: 30px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 150px;
 }
 
 #h1Banner {
-    font-size: 64px;
-    line-height: 90%;
-    margin-bottom: -10px;
+  font-size: 64px;
+  line-height: 90%;
+  margin-bottom: -10px;
 }
-#h1feat {
-    font-size: 48px;
-    line-height: 100%;
-    margin-bottom: -10px;
-}
-#checkIcon {
-    margin-right: 30px;
-    margin-left: 10px;
-    color: #38B2A6;
-}
-#botBanner{
-    font-size: 20px;
-    margin-left: 20px;
-}
-#h1Nav {
-    font-size: 36px;
-}
-#card1 {
-    background-image: url("https://images.pexels.com/photos/3822727/pexels-photo-3822727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    width: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 75%;
-}
-#card2 {
-    background-image:  url(images/card.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
 
+#h1feat {
+  font-size: 48px;
+  line-height: 100%;
+  margin-bottom: -10px;
 }
+
+#checkIcon {
+  margin-right: 30px;
+  margin-left: 10px;
+  color: #38B2A6;
+}
+
+#botBanner {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#h1Nav {
+  font-size: 36px;
+}
+
+#card1 {
+  background-image: url("https://images.pexels.com/photos/3822727/pexels-photo-3822727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+}
+
+#card2 {
+  background-image: url(images/card.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+}
+
 #card3 {
-    background-image: url("https://images.pexels.com/photos/4057112/pexels-photo-4057112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    width: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 85%;
+  background-image: url("https://images.pexels.com/photos/4057112/pexels-photo-4057112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
 }
+
 #h2card {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+#testUser {
+    font-size: 22px;
+    margin-bottom: -20px;
+}
+
+#testitle {
+    font-weight: bolder;
+    font-style: normal;
     margin-bottom: -10px;
+}
+
+#h1test {
+    text-align: center;
+    font-size: 44px;
+    font-weight: normal;
+    margin-top: 50px;
 }

@@ -1,80 +1,203 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- My own CSS file -->
+    <script src="https://kit.fontawesome.com/6af537d3cc.js" crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="flickity.min.css" media="screen">
+    <!-- Carousel JS -->
+    <script src="flickity.pkgd.min.js"></script>
+    <title>
+    FitnessApp Generic website - Just another fake fitness app!
+    </title>
+</head>
+<body>
+<header>    <!-- Header with navigation items -->
+        <div class="headerLeft">
+        <h1 id="h1Nav">
+        <i class="fas fa-fire"></i> FitnessApp
+        </h1>
+        <a href="#">What We Do</a>
+        <a href="#">Blog</a>
+        <a href="#">Transformations</a>
+        </div>
+        <div class="headerRight">
+        <!-- Signup and Login buttons -->
+        <button type="signupBanner" name="signUp"> Try for FREE! </button>
+        <button type="button" name="login"> Login </button>
+        </div>
+    </header>
 
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/6af537d3cc.js" crossorigin="anonymous"></script>
+<section class="topBanner">    <!-- Top banner with motivational msg & CTA -->
+    <div class="logoFloating">
+        <h1 id=h1Banner>Get Shredded Without
+        <br>Even Trying
+        </h1>
+        <div class="bannerList">
+        <p>We would literally put you on fire for money!
+        <br>
+        <i class="fas fa-check" id="checkIcon"></i>Fun, varied workouts
+        <br>
+        <i class="fas fa-check"id="checkIcon"></i>Healthy & personalised
+        <br>
+        <i class="fas fa-check"id="checkIcon"></i>Keep motivated
+        <br>
+        <i class="fas fa-check"id="checkIcon"></i>Whole-body health
+        </p>
+    </div>
+    <button type="signupBanner" id="botBanner">Try for FREE</button>
+    </div>
+</section>
 
-        <title>
-            FitnessApp Generic website - Just another fake fitness app!
-        </title>
+<section class="featSection">    <!-- Features Cards -->
+    <h1 id="h1feat">Why you'll love us ♥</h1>
+    <p>These are the main reasons why people won't stop signing up
+    <br> besides this being
+    <strong>the best app available on the marked:
+    </p>
+    <div class="features">    <!-- cards with main features, used flex wrap to adjust -->
+        <div class="card">
+            <div class="cardBG" id="card1"></div>
+            <div class="cadContent">
+            <h2 id="h2card">Motivation</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ever since the 1500s.</p>
+            <a href="#" class="aCard">Signup for Free</a>
+            </div>
+            </div>
+        <div class="card">
+            <div class="cardBG" id="card2"></div>
+            <div class="cadContent">
+            <h2 id="h2card">Progress</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ever since the 1500s.</p>
+            <a href="#" class="aCard">Signup for Free</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardBG" id="card3"></div>
+            <div class="cadContent">
+                <h2 id="h2card">Customized</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ever since the 1500s.</p>
+                <a href="#" class="aCard">Signup for Free</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    </head>
-    <body>
-        <header> <!-- Header with navigation items -->
 
-            <div class="headerLeft">
-                <h1 id="h1Nav"><i class="fas fa-fire"></i> FitnessApp</h1>
-                <a href="#">What We Do</a>
-                <a href="#">Blog</a>
-                <a href="#">Transformations</a>
+<section class="testimonials">    <!-- testimonial carousel -->
+    <h1 id="h1test">What our members are saying:</h1>
+    <!-- Flickity HTML init -->
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+            <div class="carUser">
+                <div class="carPhoto">
+                </div>
+                <div class="carName">
+                    <h3 id=testUser>Karen O.</h3>
+                    <h4>30 yo, Dublin</h4>
+                </div>
+            </div>
+            <div class="carCont">
+                <div class="carTitle">
+                    <h2 id="testitle">I found myself again...</h2>
+                </div>
+                <div class="carText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
+                </div>
             </div>
 
-            <div class="headerRight">
-                <!-- Signup and Login buttons -->
-                <button type="signupBanner" name="signUp"> Try for FREE! </button>
-                <button type="button" name="login"> Login </button>
+
+
+        </div>
+        <div class="carousel-cell">
+            <div class="carUser">
+                <div class="carPhoto">
+                </div>
+                <div class="carName">
+                    <h3 id=testUser>Karen O.</h3>
+                    <h4>30 yo, Dublin</h4>
+                </div>
+            </div>
+            <div class="carCont">
+                <div class="carTitle">
+                    <h2 id="testitle">I found myself again...</h2>
+                </div>
+                <div class="carText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
+                </div>
             </div>
 
 
-        </header> <!-- End of Header / nav bar -->
-        <section class="topBanner"> <!-- Top banner with motivational msg & CTA -->
-            <div class="logoFloating">
-                <h1 id=h1Banner>Get Shredded Without<br>Even Trying</h1>
-                <div class="bannerList">
-                <p>We would literally put you on fire for money!<br>
-                <i class="fas fa-check" id="checkIcon"></i>Fun, varied workouts <br>
-                <i class="fas fa-check"id="checkIcon"></i>Healthy & personalised <br>
-                <i class="fas fa-check"id="checkIcon"></i>Keep motivated <br>
-                <i class="fas fa-check"id="checkIcon"></i>Whole-body health
-                </p>
 
+        </div>
+        <div class="carousel-cell">
+            <div class="carUser">
+                <div class="carPhoto">
                 </div>
-                <button type="signupBanner" id="botBanner">Try for FREE</button>
-            </div>
-        </section>
-        <section class="featSection"> <!-- Features Cards -->
-
-            <h1 id="h1feat">Why you'll love us ♥</h1>
-            <p>These are the main reasons why people won't stop signing up <br> besides this being <strong>the best app available on the marked:</p>
-
-            <div class="features">
-
-                <div class="card" >
-                    <div class="cardBG" id="card1"></div>
-                    <div class="cadContent">
-                        <h2 id="h2card">Motivation</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ever since the 1500s.</p>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <div class="cardBG" id="card2"></div>
-                    <div class="cadContent">
-                        <h2 id="h2card">Progress</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ever since the 1500s.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="cardBG" id="card3"></div>
-                    <div class="cadContent">
-                        <h2 id="h2card">Customized</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ever since the 1500s.</p>
-                    </div>
+                <div class="carName">
+                    <h3 id=testUser>Karen O.</h3>
+                    <h4>30 yo, Dublin</h4>
                 </div>
             </div>
-        </section>
-    </body>
+            <div class="carCont">
+                <div class="carTitle">
+                    <h2 id="testitle">I found myself again...</h2>
+                </div>
+                <div class="carText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="carousel-cell">
+            <div class="carUser">
+                <div class="carPhoto">
+                </div>
+                <div class="carName">
+                    <h3 id=testUser>Karen O.</h3>
+                    <h4>30 yo, Dublin</h4>
+                </div>
+            </div>
+            <div class="carCont">
+                <div class="carTitle">
+                    <h2 id="testitle">I found myself again...</h2>
+                </div>
+                <div class="carText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="carousel-cell">
+            <div class="carUser">
+                <div class="carPhoto">
+                </div>
+                <div class="carName">
+                    <h3 id=testUser>Karen O.</h3>
+                    <h4>30 yo, Dublin</h4>
+                </div>
+            </div>
+            <div class="carCont">
+                <div class="carTitle">
+                    <h2 id="testitle">I found myself again...</h2>
+                </div>
+                <div class="carText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor velit, scelerisque eu mauris et, ornare varius est. Praesent vitae magna nisl. Cras vitae dictum ipsum. Ut volutpat purus ut erat cursus, sit amet gravida velit consequat efficitur.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+<script src="/path/to/flickity.pkgd.min.js"></script>
+</body>
 </html>
