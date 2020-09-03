@@ -6,12 +6,9 @@ html, body {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #FFFAFB;
   font-size: 16px;
-  width: 100%
-    display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+    display: block;
 }
 
 h1 {
@@ -24,7 +21,6 @@ a {
   font-weight: bold;
   color: #242325;
 }
-
 a:hover {
   color: #BE649A;
   transition: 0.3s;
@@ -46,14 +42,12 @@ button {
   font-weight: bold;
   color: dimgray;
 }
-
 button:hover {
   background-color: #dddddd;
   transition: 0.3s;
   color: black;
   font-weight: bold;
 }
-
 button[type="signup"]:hover {
   background-color: #BE649A;
   padding-left: 20px;
@@ -62,14 +56,12 @@ button[type="signup"]:hover {
   color: #FFFAFB;
   padding: 10px;
 }
-
 button[type="signupBanner"] {
   background-color: #BE649A;
   transition: 0.2s;
   color: #FFFAFB;
   padding: 10px;
 }
-
 button[type="signupBanner"]:hover {
   background-color: #BD6198;
   padding-left: 40px;
@@ -79,6 +71,11 @@ button[type="signupBanner"]:hover {
     /* box-shadow: 0 0 5px 1px; */;
 }
 
+footer {
+    background-color: black;
+    padding: 30px;
+}
+
 .headerLeft {
   margin-left: 20px;
   min-width: 30%;
@@ -86,28 +83,25 @@ button[type="signupBanner"]:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-    /* border: solid 1px black; */;
 }
 
 .headerRight {
   margin-right: 20px;
-   /* border: solid 1px black; */;
 }
 
 .topBanner {
   padding: 100px;
   background-position: 50% 75%;
   background-size: cover;
-  min-height: 40%;
+  min-height: 30%;
   margin-left: 60px;
   margin-right: 60px;
   padding-left: 90px;
-  justify-content: center;
-  background-image: url("https://images.pexels.com/photos/3758049/pexels-photo-3758049.jpeg?cs=srgb&dl=pexels-alexy-almond-3758049.jpg&fm=jpg");
+  background-image: url(images/pexels-alexy-almond-3758049.jpg);
 }
 
 .logoFloating {
-  margin-left: 10%;
+  margin-left: 12%;
 }
 
 .bannerList {
@@ -118,14 +112,13 @@ button[type="signupBanner"]:hover {
 }
 
 .featSection {
-    margin-top: 80px;
+    margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   text-align: center;
  }
-
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +130,6 @@ button[type="signupBanner"]:hover {
   min-height: 350px;
   border-radius: 20px;
   margin: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
   flex: 0 1 300px;
   display: flex;
   flex-direction: column;
@@ -146,20 +138,19 @@ button[type="signupBanner"]:hover {
   -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
   filter: opacity(30%) grayscale(100%);
-  transition: 1s;
+  transition: 0.6s;
 }
-
 .card:hover {
   filter: opacity(100%) grayscale(0%);
-  transition: 0.3s;
+    transform: scale(1.02);
+  transition: 0.2s;
 }
-
 .testbg {
     width: 100%;
     background-color: #EEE8EE;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
+    display: block;
 }
-
 .cadContent {
   padding: 15px;
   margin-top: -20px;
@@ -169,19 +160,25 @@ button[type="signupBanner"]:hover {
   font-family: 'Open Sans', sans-serif;
   line-height: 125%;
 }
-
 .cardBG {
   width: 300px;
   height: 300px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-
 .aCard {
   font-size: 12px;
   font-weight: normal;
 }
 
+
+.testimonials {
+    margin-top: 100px;
+    padding-top: 30px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+    }
 .carousel-cell {
   height: 250px;
   width: 40%;
@@ -197,6 +194,11 @@ button[type="signupBanner"]:hover {
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+
+}
+.carousel-cell:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 .carUser {
     width: 25%;
@@ -214,7 +216,7 @@ button[type="signupBanner"]:hover {
     min-height: 80px;
     margin-bottom: -20px;
     margin-top: 10px;
-    background-image: url("https://images.pexels.com/photos/2167673/pexels-photo-2167673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url(images/testuser.jpeg);
     background-size: cover;
     border-radius: 100px;
     background-repeat: no-repeat;
@@ -235,14 +237,6 @@ button[type="signupBanner"]:hover {
     padding-left: 20px;
     padding-right: 20px;
     color: rgba(0, 0, 0, 0.8);
-    }
-
-.testimonials {
-    margin-top: 100px;
-    padding-top: 30px;
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 150px;
     }
 
 .carousel {
@@ -279,7 +273,7 @@ button[type="signupBanner"]:hover {
 }
 
 #card1 {
-  background-image: url("https://images.pexels.com/photos/3822727/pexels-photo-3822727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url(images/card1.jpeg);
   width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -294,7 +288,7 @@ button[type="signupBanner"]:hover {
 }
 
 #card3 {
-  background-image: url("https://images.pexels.com/photos/4057112/pexels-photo-4057112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url(images/card3.jpeg);
   width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -337,6 +331,7 @@ button[type="signupBanner"]:hover {
     font-weight: normal;
 
 }
+
 #ptestimonial {
     text-align: center;
     font-size: 14px;
